@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/4slyQZDCLK4ia0uR/B+rnO3F0LkYWhbSnxv1EVH+JByNXfupAR2AoyPcrA79+RnKxjz2s9LvdPakoLAGz9SGQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\44788\\Documents\\Mobile app\\MobileOrderingApp\\MobileOrderingApp.iOS\\MobileOrderingApp.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
+  ],
+  "logs": []
+}

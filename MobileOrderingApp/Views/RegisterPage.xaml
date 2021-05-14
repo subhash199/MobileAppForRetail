@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileOrderingApp.Views.RegisterPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Entry x:Name="UserName_Box" Placeholder="UserName"></Entry>
+            <Entry x:Name="passwordBox" Placeholder="Password"></Entry>           
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="Day_Box" Keyboard="Numeric" Placeholder="Day"/>
+                <Entry x:Name="Mon_Box" Keyboard="Numeric"  Placeholder="Month"/>
+                <Entry x:Name="Year_Box" HorizontalTextAlignment="Center" WidthRequest="80" Keyboard="Numeric"  Placeholder="Year"/>
+                <Label Text="Example- 11 09 1997" Margin="10,15,0,0"/>
+            </StackLayout>
+            <Entry x:Name="addressLine1" Placeholder="Address Line 1"></Entry>
+            <Entry x:Name="AddressLine2" Placeholder="Address Line 2"></Entry>
+            <Entry x:Name="town" Text="Hull"></Entry>
+            <Entry x:Name="postCode" Placeholder="Postcode" Text="HU"></Entry>
+            <Entry x:Name="mobile" Keyboard="Telephone" Placeholder="Mobile Number"></Entry>
+            <Button Text="Register" Clicked="RegisterClicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileOrderingApp.Views.ItemsPage"
+             Title="{Binding Title}"
+             xmlns:local="clr-namespace:MobileOrderingApp.ViewModels"  
+             xmlns:model="clr-namespace:MobileOrderingApp.Models"  
+             x:Name="BrowseItemsPage">
+
+    <ContentPage.BindingContext>
+        <local:ItemsViewModel/>
+    </ContentPage.BindingContext>
+    <!--
+      x:DataType enables compiled bindings for better performance and compile time validation of binding expressions.
+      https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/compiled-bindings
+    -->
+    <ContentPage.Content>
+        
+        <Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="80"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <SearchBar Placeholder="Search Item" Grid.Row="0" Grid.Column="0"/>
+                    <ImageButton Source="bag.jpg" BackgroundColor="Transparent" Grid.Column="1"  Grid.Row="0" />
+                    <Label Grid.Row="0" Grid.Column="1" Text="1" Margin="40,10,0,0"></Label>
+                </Grid>
+                <CollectionView x:Name="CategoryView" Margin="0,20" HeightRequest="125" VerticalOptions="FillAndExpand"
+                                HorizontalScrollBarVisibility="Never"                                
+                                ItemsSource="{Binding CategoryList}"
+                                ItemsLayout="HorizontalList" 
+                                SelectionMode="Single" Grid.Row="1">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="0,0,15,0">
+                                <Frame HeightRequest="40" HasShadow="False" BackgroundColor="#feeee8" CornerRadius="10">
+                                    <Image Source="{Binding imageUrl}" HeightRequest="40" WidthRequest="40"/>
+                                </Frame>
+                                <Label Text="{Binding categoryName}" HorizontalTextAlignment="Center"/>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+                </CollectionView>
+
+                <!--<RefreshView IsRefreshing="{Binding IsBusy, Mode=TwoWay}">-->
+                <CollectionView x:Name="ItemsListView"  
+                        ItemsSource="{Binding Products}"                        
+                        SelectionMode="None" Grid.Row="2">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical" Span="1"
+                                 VerticalItemSpacing="6"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate  >
+                        <DataTemplate >
+                            <Grid x:Name="ItemsGrid" Padding="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="80" />
+                                    <ColumnDefinition Width="50" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Image  Source="{Binding Image}"
+                               WidthRequest="60" HeightRequest="60"
+                               Grid.Column="0" Grid.Row="0" />
+                                <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="1" >
+                                    <Label Text="{Binding Name}" FontSize="Title" TextColor="Black"/>
+                                    <Label Text="{Binding Price} "
+                                   FontSize="Medium" TextColor="Black" Margin="10,0,0,0"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Vertical" Margin="10,0,0,0" Grid.Column="2" Grid.Row="0" >
+                                    <Label Text="QTY" FontSize="Medium"></Label>
+                                    <Entry Text="1"></Entry>
+                                </StackLayout>
+                                <Button WidthRequest="80" HeightRequest="40" Text="Bag it" Grid.Column="3"></Button>
+
+
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="50" />
+                                    <RowDefinition Height="50" />
+                                </Grid.RowDefinitions>
+
+
+
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                <!--</RefreshView>-->
+
+            </Grid>
+        </Grid>
+
+
+    </ContentPage.Content>
+
+</ContentPage>
