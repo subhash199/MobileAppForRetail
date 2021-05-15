@@ -16,13 +16,13 @@ namespace MobileOrderingApp.ViewModels
     {
         private List<Item> getProductList;
         private List<Category> getCategoryList;
-        //public List<Item> Products
-        //{
-        //    get { return getProductList=  new ProductService().GetItems(); }
-        //    set { Products = getProductList; }           
-          
-        //}
-         
+        public List<Item> Products
+        {
+            get { return getProductList = new ProductService().GetItems(); }
+            set { Products = getProductList; }
+
+        }
+
 
         public List<Category> CategoryList 
         {

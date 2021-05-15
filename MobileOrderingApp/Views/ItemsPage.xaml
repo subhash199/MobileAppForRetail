@@ -36,8 +36,8 @@
                         <RowDefinition Height="50"/>
                     </Grid.RowDefinitions>
                     <SearchBar Placeholder="Search Item" Grid.Row="0" Grid.Column="0"/>
-                    <ImageButton Source="bag.jpg" BackgroundColor="Transparent" Grid.Column="1"  Grid.Row="0" />
-                    <Label Grid.Row="0" Grid.Column="1" Text="1" Margin="40,10,0,0"></Label>
+                    <ImageButton x:Name="Cart_btn" Source="bag.jpg" BackgroundColor="Transparent" Grid.Column="1"  Grid.Row="0" />
+                    <Label x:Name="ItemCount" Grid.Row="0" Grid.Column="1" Text="0" Margin="40,10,0,0"></Label>
                 </Grid>
                 <CollectionView x:Name="CategoryView" Margin="0,20" HeightRequest="125" VerticalOptions="FillAndExpand"
                                 HorizontalScrollBarVisibility="Never"                                
@@ -79,15 +79,15 @@
                                WidthRequest="60" HeightRequest="60"
                                Grid.Column="0" Grid.Row="0" />
                                 <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="1" >
-                                    <Label Text="{Binding Name}" FontSize="Title" TextColor="Black"/>
-                                    <Label Text="{Binding Price} "
+                                    <Label Text="{Binding Name}" FontSize="16" TextColor="Black"/>
+                                    <Label Text="{Binding Price}, StringFormat='£ {0}.00'}"
                                    FontSize="Medium" TextColor="Black" Margin="10,0,0,0"/>
                                 </StackLayout>
                                 <StackLayout Orientation="Vertical" Margin="10,0,0,0" Grid.Column="2" Grid.Row="0" >
-                                    <Label Text="QTY" FontSize="Medium"></Label>
-                                    <Entry Text="1"></Entry>
+                                    <Label Text="QTY" FontSize="Small"></Label>
+                                    <Entry x:Name="qty_btn" Text="1" FontSize="Small" Keyboard="Numeric" MaxLength="2"></Entry> 
                                 </StackLayout>
-                                <Button WidthRequest="80" HeightRequest="40" Text="Bag it" Grid.Column="3"></Button>
+                                <Button ClassId="{Binding ID}" WidthRequest="80" HeightRequest="40" Text="Bag it" Clicked="Bag_Clicked" Grid.Column="3"></Button>
 
 
 

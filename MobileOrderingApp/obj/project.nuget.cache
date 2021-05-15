@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I82/jJFpuw7k3CQhaGkab0G9iDM2Ha1ysd/l5yfKAJZH6v87+xTX3SRqye0RsO7Eqw94gtS7e9LajF2gs+oA2g==",
+  "dgSpecHash": "F4C6qfuYn/FkZzHfUC1PTjft/47m3WL+QRDpuC8GX3PF4G+CX1y8SsQ8uf6hskLfG9lI8rIWrJv/W2K0sd+dHw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\44788\\Documents\\Mobile app\\MobileOrderingApp\\MobileOrderingApp\\MobileOrderingApp.csproj",
+  "projectFilePath": "C:\\Users\\44788\\Documents\\Mobile app\\MobileAppForRetail\\MobileOrderingApp\\MobileOrderingApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\44788\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\44788\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

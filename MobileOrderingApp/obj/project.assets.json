@@ -634,11 +634,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\44788\\Documents\\Mobile app\\MobileOrderingApp\\MobileOrderingApp\\MobileOrderingApp.csproj",
+      "projectUniqueName": "C:\\Users\\44788\\Documents\\Mobile app\\MobileAppForRetail\\MobileOrderingApp\\MobileOrderingApp.csproj",
       "projectName": "MobileOrderingApp",
-      "projectPath": "C:\\Users\\44788\\Documents\\Mobile app\\MobileOrderingApp\\MobileOrderingApp\\MobileOrderingApp.csproj",
+      "projectPath": "C:\\Users\\44788\\Documents\\Mobile app\\MobileAppForRetail\\MobileOrderingApp\\MobileOrderingApp.csproj",
       "packagesPath": "C:\\Users\\44788\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\44788\\Documents\\Mobile app\\MobileOrderingApp\\MobileOrderingApp\\obj\\",
+      "outputPath": "C:\\Users\\44788\\Documents\\Mobile app\\MobileAppForRetail\\MobileOrderingApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

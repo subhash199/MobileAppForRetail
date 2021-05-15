@@ -984,11 +984,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\44788\\Documents\\Mobile app\\MobileOrderingApp\\MobileOrderingApp.iOS\\MobileOrderingApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\44788\\Documents\\Mobile app\\MobileAppForRetail\\MobileOrderingApp.iOS\\MobileOrderingApp.iOS.csproj",
       "projectName": "MobileOrderingApp.iOS",
-      "projectPath": "C:\\Users\\44788\\Documents\\Mobile app\\MobileOrderingApp\\MobileOrderingApp.iOS\\MobileOrderingApp.iOS.csproj",
+      "projectPath": "C:\\Users\\44788\\Documents\\Mobile app\\MobileAppForRetail\\MobileOrderingApp.iOS\\MobileOrderingApp.iOS.csproj",
       "packagesPath": "C:\\Users\\44788\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\44788\\Documents\\Mobile app\\MobileOrderingApp\\MobileOrderingApp.iOS\\obj\\",
+      "outputPath": "C:\\Users\\44788\\Documents\\Mobile app\\MobileAppForRetail\\MobileOrderingApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1009,8 +1009,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\44788\\Documents\\Mobile app\\MobileOrderingApp\\MobileOrderingApp\\MobileOrderingApp.csproj": {
-              "projectPath": "C:\\Users\\44788\\Documents\\Mobile app\\MobileOrderingApp\\MobileOrderingApp\\MobileOrderingApp.csproj"
+            "C:\\Users\\44788\\Documents\\Mobile app\\MobileAppForRetail\\MobileOrderingApp\\MobileOrderingApp.csproj": {
+              "projectPath": "C:\\Users\\44788\\Documents\\Mobile app\\MobileAppForRetail\\MobileOrderingApp\\MobileOrderingApp.csproj"
             }
           }
         }

@@ -1936,11 +1936,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\44788\\Documents\\Mobile app\\MobileOrderingApp\\MobileOrderingApp.Android\\MobileOrderingApp.Android.csproj",
+      "projectUniqueName": "C:\\Users\\44788\\Documents\\Mobile app\\MobileAppForRetail\\MobileOrderingApp.Android\\MobileOrderingApp.Android.csproj",
       "projectName": "MobileOrderingApp.Android",
-      "projectPath": "C:\\Users\\44788\\Documents\\Mobile app\\MobileOrderingApp\\MobileOrderingApp.Android\\MobileOrderingApp.Android.csproj",
+      "projectPath": "C:\\Users\\44788\\Documents\\Mobile app\\MobileAppForRetail\\MobileOrderingApp.Android\\MobileOrderingApp.Android.csproj",
       "packagesPath": "C:\\Users\\44788\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\44788\\Documents\\Mobile app\\MobileOrderingApp\\MobileOrderingApp.Android\\obj\\",
+      "outputPath": "C:\\Users\\44788\\Documents\\Mobile app\\MobileAppForRetail\\MobileOrderingApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1961,8 +1961,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\44788\\Documents\\Mobile app\\MobileOrderingApp\\MobileOrderingApp\\MobileOrderingApp.csproj": {
-              "projectPath": "C:\\Users\\44788\\Documents\\Mobile app\\MobileOrderingApp\\MobileOrderingApp\\MobileOrderingApp.csproj"
+            "C:\\Users\\44788\\Documents\\Mobile app\\MobileAppForRetail\\MobileOrderingApp\\MobileOrderingApp.csproj": {
+              "projectPath": "C:\\Users\\44788\\Documents\\Mobile app\\MobileAppForRetail\\MobileOrderingApp\\MobileOrderingApp.csproj"
             }
           }
         }
